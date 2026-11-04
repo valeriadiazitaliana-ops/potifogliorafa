@@ -1,0 +1,142 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+/* Estilização do Perfil */
+.perfil-container {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.foto-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.foto-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bio {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Botões Sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-social {
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    border: 1px solid #334155;
+}
+
+.btn-social:hover {
+    background-color: #334155;
+    transform: translateY(-2px);
+}
+
+/* Seção de Projetos */
+.projetos-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.projetos-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1e293b;
+    padding-bottom: 0.5rem;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-projeto {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card-projeto:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.card-projeto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #38bdf8;
+}
+
+.card-projeto p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+}
+
+.link-projeto {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    padding-top: 2rem;
+    color: #64748b;
+    font-size: 0.85rem;
+}
